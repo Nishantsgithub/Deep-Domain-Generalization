@@ -1,0 +1,1 @@
+python train.py --data_dir "C:\Users\kulde\OneDrive\Desktop\PACS\kfold"--max_epoch 1 --net resnet18 --task img_dg --output "C\Users\kulde\OneDrive\Desktop\DeepDG"--test_envs 2 --dataset PACS --algorithm MLDG --mldg_beta 10

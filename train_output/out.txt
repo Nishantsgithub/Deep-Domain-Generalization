@@ -1,0 +1,48 @@
+Environment:
+	Python: 3.9.12
+	PyTorch: 2.0.0+cu117
+	Torchvision: 0.15.1+cu117
+	CUDA: 11.7
+	CUDNN: 8500
+	NumPy: 1.21.5
+	PIL: 9.0.1
+Traceback (most recent call last):
+  File "C:\Users\kulde\OneDrive\Desktop\DeepDG\train.py", line 106, in <module>
+    train_loaders, eval_loaders = get_img_dataloader(args)
+  File "C:\Users\kulde\OneDrive\Desktop\DeepDG\datautil\getdataloader.py", line 19, in get_img_dataloader
+    tedatalist.append(ImageDataset(args.dataset, args.task, args.data_dir,
+  File "C:\Users\kulde\OneDrive\Desktop\DeepDG\datautil\imgdata\imgdataload.py", line 12, in __init__
+    self.imgs = ImageFolder(root_dir+domain_name).imgs
+  File "C:\Users\kulde\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 309, in __init__
+    super().__init__(
+  File "C:\Users\kulde\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 144, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "C:\Users\kulde\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 218, in find_classes
+    return find_classes(directory)
+  File "C:\Users\kulde\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'amazon'
+Environment:
+	Python: 3.9.12
+	PyTorch: 2.0.0
+	Torchvision: 0.15.0
+	CUDA: 11.7
+	CUDNN: 8500
+	NumPy: 1.21.5
+	PIL: 9.0.1
+Traceback (most recent call last):
+  File "C:\Users\kulde\OneDrive\Desktop\DeepDG\train.py", line 106, in <module>
+    train_loaders, eval_loaders = get_img_dataloader(args)
+  File "C:\Users\kulde\OneDrive\Desktop\DeepDG\datautil\getdataloader.py", line 19, in get_img_dataloader
+    tedatalist.append(ImageDataset(args.dataset, args.task, args.data_dir,
+  File "C:\Users\kulde\OneDrive\Desktop\DeepDG\datautil\imgdata\imgdataload.py", line 12, in __init__
+    self.imgs = ImageFolder(root_dir+domain_name).imgs
+  File "C:\Users\kulde\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 309, in __init__
+    super().__init__(
+  File "C:\Users\kulde\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 144, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "C:\Users\kulde\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 218, in find_classes
+    return find_classes(directory)
+  File "C:\Users\kulde\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'amazon'
